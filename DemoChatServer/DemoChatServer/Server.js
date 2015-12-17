@@ -11,7 +11,7 @@ io.sockets.on('connection', function (socket) {
 			tinnhan : data['message'],
 			thoigian : _tg
 		};
-		//io.sockets.emit('tn_den_client', { message: data['message'] , thoigian : _tg });
+		//io.sockets.emit('tn_den_client', { message: data['message'] , thoigian : _tg }); 
 		io.sockets.emit('tn_den_client', kq );
 	});
 });
