@@ -1,0 +1,10 @@
+{
+  "name": "DemoChatServer",
+  "version": "0.0.0",
+  "description": "DemoChatServer",
+  "main": "app.js",
+  "author": {
+    "name": "Admin",
+    "email": ""
+  }
+}
