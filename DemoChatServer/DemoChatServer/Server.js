@@ -7,7 +7,12 @@ io.sockets.on('connection', function (socket) {
 	socket.on('tn_den_server', function (data) {
 		var _dt = new Date();
 		var _tg = _dt.getHours() + ':' + _dt.getMinutes() + ':' + _dt.getSeconds();
-		io.sockets.emit('tn_den_client', { message: data['message'] , thoigian : _tg });
+		var kq = {
+			tinnhan : data['message'],
+			thoigian : _tg
+		};
+		//io.sockets.emit('tn_den_client', { message: data['message'] , thoigian : _tg });
+		io.sockets.emit('tn_den_client', kq );
 	});
 });
 
