@@ -1,6 +1,6 @@
 ﻿
 var http = require('http');
-var io = require('socket.io').listen(8000);
+var io = require('socket.io').listen(8080);
 var fs = require('fs');
 
 io.sockets.on('connection', function (socket) {
